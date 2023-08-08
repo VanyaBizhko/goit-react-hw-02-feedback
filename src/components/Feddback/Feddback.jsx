@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import styles from './Feddback.module.css'
 export default function Feddback({ options, feddbackBtns }) {
     return (
@@ -8,4 +9,8 @@ export default function Feddback({ options, feddbackBtns }) {
       </ul>
     ))
   );
+}
+Feddback.propType = {
+  options: PropTypes.array,
+  feddbackBtns: PropTypes.button
 }
